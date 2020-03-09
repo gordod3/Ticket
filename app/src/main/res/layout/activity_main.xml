@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/blackBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#D9000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/september"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="SEPTEMBER"
+        android:textColor="#D4FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/blackBox"
+        app:layout_constraintLeft_toLeftOf="@id/blackBox"
+        app:layout_constraintRight_toRightOf="@id/blackBox"
+        app:layout_constraintTop_toTopOf="@id/blackBox" />
+
+    <TextView
+        android:id="@+id/ND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ND"
+        android:textColor="#D4FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/nothing"
+        app:layout_constraintLeft_toLeftOf="@id/blackBox"
+        app:layout_constraintRight_toRightOf="@id/nothing"
+        app:layout_constraintTop_toTopOf="@id/september" />
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    "
+        android:textColor="#D4FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/september"
+        app:layout_constraintRight_toRightOf="@id/september"
+        app:layout_constraintTop_toTopOf="@id/september" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        android:textColor="#D4FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ND"
+        app:layout_constraintLeft_toLeftOf="@id/blackBox"
+        app:layout_constraintRight_toRightOf="@id/nothing"
+        app:layout_constraintTop_toTopOf="@id/september" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 2016"
+        android:textColor="#D4FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/blackBox"
+        app:layout_constraintStart_toEndOf="@+id/september"
+        app:layout_constraintTop_toTopOf="@id/blackBox" />
+
+    <LinearLayout
+        android:id="@+id/firsWhiteBox"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/blackBox"/>
+
+    <TextView
+        android:id="@+id/LHR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LHR"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/firsWhiteBox"
+        app:layout_constraintLeft_toLeftOf="@id/firsWhiteBox"
+        app:layout_constraintRight_toRightOf="@id/airplane"
+        app:layout_constraintTop_toTopOf="@+id/blackBox" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="London"
+        android:textSize="12.5spsp"
+        app:layout_constraintLeft_toLeftOf="@id/firsWhiteBox"
+        app:layout_constraintRight_toRightOf="@id/airplane"
+        app:layout_constraintTop_toBottomOf="@+id/LHR" />
+    <TextView
+        android:id="@+id/JFK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JFK"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/firsWhiteBox"
+        app:layout_constraintLeft_toLeftOf="@id/airplane"
+        app:layout_constraintRight_toRightOf="@id/firsWhiteBox"
+        app:layout_constraintTop_toTopOf="@+id/blackBox" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW YORK"
+        android:textSize="12.5sp"
+        app:layout_constraintTop_toBottomOf="@+id/JFK"
+        app:layout_constraintLeft_toLeftOf="@id/airplane"
+        app:layout_constraintRight_toRightOf="@id/firsWhiteBox"/>
+
+    <ImageView
+        android:id="@+id/airplane"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/IMG_3620"
+        android:orientation="vertical"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/firsWhiteBox"
+        app:layout_constraintEnd_toEndOf="@+id/firsWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/firsWhiteBox"
+        app:layout_constraintTop_toBottomOf="@+id/blackBox" />
+    <LinearLayout
+        android:id="@+id/secondWhiteBox"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/firsWhiteBox" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textSize="12.5sp"
+        app:layout_constraintBottom_toBottomOf="@id/secondWhiteBox"
+        app:layout_constraintLeft_toLeftOf="@id/secondWhiteBox"
+        app:layout_constraintRight_toRightOf="@id/secondWhiteBox"
+        app:layout_constraintTop_toBottomOf="@+id/blackBox" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAMIE SYKE"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/secondWhiteBox"
+        app:layout_constraintRight_toRightOf="@id/secondWhiteBox"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLIGHT"
+        android:textSize="12.5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondWhiteBox"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/firsWhiteBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VA301"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/flight"
+        app:layout_constraintStart_toStartOf="@+id/flight"
+        app:layout_constraintTop_toBottomOf="@+id/flight" />
+
+    <TextView
+        android:id="@+id/seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLIGHT"
+        android:textSize="12.5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondWhiteBox"
+        app:layout_constraintEnd_toEndOf="@+id/secondWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/firsWhiteBox" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21A"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/seat"
+        app:layout_constraintStart_toStartOf="@+id/seat"
+        app:layout_constraintTop_toBottomOf="@+id/seat" />
+    <LinearLayout
+        android:id="@+id/barcode"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/secondWhiteBox">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/IMG_3621"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
